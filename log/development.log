@@ -1,0 +1,262 @@
+  [1m[35m (11.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE DATABASE `BookCommunity_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `BookCommunity_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (29.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (21.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT GET_LOCK('3843813846739485465', 0)[0m
+  [1m[35m (20.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2021-01-07 05:09:55.178073', '2021-01-07 05:09:55.178073')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('3843813846739485465')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('3843813846739485465', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3843813846739485465')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (20.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT GET_LOCK('3843813846739485465', 0)[0m
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20210107062738)
+  [1m[35m (25.0ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `about` text, `image` varchar(255), `category` varchar(255), `bpdy` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210107062738')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3843813846739485465')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/novel" for ::1 at 2021-01-07 17:05:25 +0900
+  [1m[35m (12.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 169.8ms | Allocations: 74164)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms | Allocations: 76114)
+
+
+  
+ActionView::Template::Error (undefined method `from_for' for #<#<Class:0x0000000008a26220>:0x0000000008a14d40>
+Did you mean?  form_for):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: <%= from_for @post do |f| %>
+    4:     <div class="field">
+    5:         <%= f.label :本文 %>
+    6:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:3
+Started GET "/posts/novel" for ::1 at 2021-01-07 17:07:17 +0900
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1051)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2117)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: <%= form_for @post do |f| %>
+    4:     <div class="field">
+    5:         <%= f.label :本文 %>
+    6:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:3
+Started GET "/posts/novel" for ::1 at 2021-01-07 17:12:10 +0900
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 0.4ms | Allocations: 862)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 1469)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: <%= form_for @post do |f| %>
+    4:     <div class="field">
+    5:         <%= f.label :本文 %>
+    6:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:3
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:04:20 +0900
+  [1m[35m (13.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (27.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 18.3ms | Allocations: 1864)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 3811)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:06:14 +0900
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 0.4ms | Allocations: 865)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1472)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:13:08 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 0.4ms | Allocations: 864)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1471)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:27:41 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 0.4ms | Allocations: 862)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 1469)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:28:55 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1864)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms | Allocations: 3811)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:31:29 +0900
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 0.4ms | Allocations: 864)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1219)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4
+Started GET "/posts" for ::1 at 2021-01-07 23:55:11 +0900
+  [1m[35m (4.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/posts/novel" for ::1 at 2021-01-07 23:55:39 +0900
+Processing by PostsController#novel as HTML
+  Rendering posts/novel.html.erb within layouts/application
+  Rendered posts/novel.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1070)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2273)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>BookCommunity</h1>
+    2: <h3>新規投稿　掲載</h3>
+    3: 
+    4: <%= form_for @post do |f| %>
+    5:     <div class="field">
+    6:         <%= f.label :本文 %>
+    7:         <%= f.text_area :body, :size => "30x10" %>
+  
+app/views/posts/novel.html.erb:4

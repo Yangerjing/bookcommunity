@@ -1,0 +1,11 @@
+<h1>BookCommunity</h1>
+<h3>新規投稿　掲載</h3>
+
+<%= form_for @post do |f| %>
+    <div class="field">
+        <%= f.label :本文 %>
+        <%= f.text_area :body, :size => "30x10" %>
+    </div>
+    <%= f.submit "掲載する" %>
+<% end %>
+<%= link_to "投稿一覧に戻る", posts_path %>
